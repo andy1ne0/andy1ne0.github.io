@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Sets the global proxy. </string>
+			<key>PayloadDisplayName</key>
+			<string>Global filter. Muahuahuahuahua</string>
+			<key>PayloadIdentifier</key>
+			<string>me.andrewpetersen.lockdown.proxy</string>
+			<key>PayloadOrganization</key>
+			<string>Andrew Petersen</string>
+			<key>PayloadType</key>
+			<string>com.apple.proxy.http.global</string>
+			<key>PayloadUUID</key>
+			<string>THERANDOMUUIDFORTHEPROXYANDREWPETERSENSWAG</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>auto</string>
+			<key>ProxyServer</key>
+			<string>http://www.andrewpetersen.me/lockdownproxy.js</string>
+			<key>ProxyPort</key>
+			<integer>80</integer>
+		</dict>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Configures device restrictions.</string>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions</string>
+			<key>PayloadIdentifier</key>
+			<string>me.andrewpetersen.lockdown.restrictions</string>
+			<key>PayloadOrganization</key>
+			<string>Andrew Petersen</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>8A15EE57-0829-4E3F-BE21-A17E73A98194</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowAddingGameCenterFriends</key>
+			<true/>
+			<key>allowAppInstallation</key>
+			<true/>
+			<key>allowAssistant</key>
+			<true/>
+			<key>allowAssistantWhileLocked</key>
+			<true/>
+			<key>allowCamera</key>
+			<true/>
+			<key>allowCloudBackup</key>
+			<true/>
+			<key>allowCloudDocumentSync</key>
+			<true/>
+			<key>allowDiagnosticSubmission</key>
+			<true/>
+			<key>allowExplicitContent</key>
+			<true/>
+			<key>allowGlobalBackgroundFetchWhenRoaming</key>
+			<true/>
+			<key>allowInAppPurchases</key>
+			<true/>
+			<key>allowMultiplayerGaming</key>
+			<true/>
+			<key>allowPhotoStream</key>
+			<true/>
+			<key>allowSafari</key>
+			<true/>
+			<key>allowScreenShot</key>
+			<true/>
+			<key>allowUntrustedTLSPrompt</key>
+			<true/>
+			<key>allowVideoConferencing</key>
+			<true/>
+			<key>allowVoiceDialing</key>
+			<true/>
+			<key>allowYouTube</key>
+			<false/>
+			<key>allowiTunes</key>
+			<true/>
+			<key>forceEncryptedBackup</key>
+			<false/>
+			<key>forceITunesStorePasswordEntry</key>
+			<false/>
+			<key>ratingApps</key>
+			<integer>1000</integer>
+			<key>ratingMovies</key>
+			<integer>1000</integer>
+			<key>ratingRegion</key>
+			<string>us</string>
+			<key>ratingTVShows</key>
+			<integer>1000</integer>
+			<key>safariAcceptCookies</key>
+			<integer>2</integer>
+			<key>safariAllowAutoFill</key>
+			<true/>
+			<key>safariAllowJavaScript</key>
+			<true/>
+			<key>safariAllowPopups</key>
+			<true/>
+			<key>safariForceFraudWarning</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Configures Configuration Profile security</string>
+			<key>PayloadDisplayName</key>
+			<string>Profile Security</string>
+			<key>PayloadIdentifier</key>
+			<string>me.andrewpetersen.lockdown.ProfileSecurity</string>
+			<key>PayloadOrganization</key>
+			<string>Andrew Petersen</string>
+			<key>PayloadType</key>
+			<string>com.apple.profileRemovalPassword</string>
+			<key>PayloadUUID</key>
+			<string>DB20DD63-ECCA-44B9-82B8-14C21CF2801D</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RemovalPassword</key>
+			<string>233231Ap/</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>A profile to lock shiz down. </string>
+	<key>PayloadDisplayName</key>
+	<string>Lockdown</string>
+	<key>PayloadIdentifier</key>
+	<string>me.andrewpetersen.lockdown</string>
+	<key>PayloadOrganization</key>
+	<string>Andrew Petersen</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>C620CD0D-269E-4AD0-95E7-C07CC446E641</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
