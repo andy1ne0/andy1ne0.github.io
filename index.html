@@ -50,15 +50,12 @@
               <script>
 		var fading = true; 
                 function toggleFade() {
-			if($('#fadeoutarrow').is(':visible')){
-				$("#fadeoutarrow").fadeToggle(1500); 
+			
+			if(!$('#fadeoutarrow').is(':visible') && !fading){
+				return; 
 		   	} else {
-				if(fading) {
-					$("#fadeoutarrow").fadeToggle(1500); 
-				} else {
-					return; 
-				}
-			} 
+				$("#fadeoutarrow").fadeToggle(1500); 
+			}
 	                setTimeout(function() {
 		                toggleFade(); 
 	                }, 1500); 
