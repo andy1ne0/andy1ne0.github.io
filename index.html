@@ -46,7 +46,18 @@
         <a class="fab fa-instagram" style="color: white; margin-left: 20px; " target="_blank" href="https://instagram.com/andyptsn"></a>
         <a class="fas fa-envelope-square" style="color: white; margin-left: 20px; " target="_blank" href="#" onclick="window.open('https://tools.andrewpetersen.me/email', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=400'); return false;"></a>
           <div align="center" style="position: absolute; bottom: 20; left: 0; right: 0; ">
-              <i class="fas fa-arrow-circle-down" style="font-size: 30; " id="fadeoutarrow"></i>
+              <i class="fas fa-arrow-circle-down" style="font-size: 40; " id="fadeoutarrow"></i>
+              <script>
+                function toggleFade() {
+	                $("#fadeoutarrow").fadeToggle(1500); 
+	                setTimeout(function() {
+		                toggleFade(); 
+	                }, 1500); 
+                }
+                $(document).ready(function(){
+                    toggleFade(); 
+                }); 
+              </script>
         </div>
       </p>
     </div>
