@@ -52,6 +52,8 @@
 			if ($(window).scrollTop() > 100){
 				if($("#fadeoutarrow").css("opacity")!=0){
 					$("#fadeoutarrow").fadeToggle(1500); 
+					console.log($(window).scrollTop()); 
+					console.log($("#fadeoutarrow").css("opacity")); 
 				}
 			} else {
 				$("#fadeoutarrow").fadeToggle(1500); 
