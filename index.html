@@ -46,41 +46,43 @@
       </div>
     </div>-->
     <div class="jumbotron" id="jumbo" style="background-image: url('https://i.imgur.com/MpARvKa.png'); background-size: cover; height: 100%; "><!-- background-color: #93B89D;  -->
-	<div id="jumbo-inner">
-	      <h1 class="hidden-xs" style="margin-left: 40px; text-shadow: 0px 2px 8px grey; ">Hi, my name is Andrew.<br /><br /><br /></h1>
-	      <h1 class="hidden-sm hidden-md hidden-lg" align="center" style="text-shadow: 0px 2px 8px grey; ">Hi, my name is Andrew.</h1>
-	      <br>
-	      <p style="font-size: 60px; text-shadow: 0px 2px 8px grey; " align="center">
-		<a class="fab fa-linkedin" style="color: white; " target="_blank" href="https://andrewpetersen.me/linkedin"></a>
-		<a class="fab fa-facebook-messenger" style="color: white; margin-left: 20px; " target="_blank" href="https://m.me/andrew.petersen.23"></a>
-		<a class="fab fa-instagram" style="color: white; margin-left: 20px; " target="_blank" href="https://instagram.com/andyptsn"></a>
-		<a class="fas fa-envelope-square" style="color: white; margin-left: 20px; " target="_blank" href="#" onclick="window.open('https://tools.andrewpetersen.me/email', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=400'); return false;"></a>
-		  <div align="center" style="position: absolute; bottom: 20; left: 0; right: 0; ">
-		      <i class="fas fa-arrow-circle-down" style="font-size: 40; " id="fadeoutarrow"></i>
-		      <script>
-			function toggleFade() {
-				if ($(window).scrollTop() > 100){
-					if($('#fadeoutarrow').css('display') != 'none'){
+	<div id="jumbo-inner" style="position: absolute; ">
+		<div style-"position: relative; ">
+		      <h1 class="hidden-xs" style="margin-left: 40px; text-shadow: 0px 2px 8px grey; ">Hi, my name is Andrew.<br /><br /><br /></h1>
+		      <h1 class="hidden-sm hidden-md hidden-lg" align="center" style="text-shadow: 0px 2px 8px grey; ">Hi, my name is Andrew.</h1>
+		      <br>
+		      <p style="font-size: 60px; text-shadow: 0px 2px 8px grey; " align="center">
+			<a class="fab fa-linkedin" style="color: white; " target="_blank" href="https://andrewpetersen.me/linkedin"></a>
+			<a class="fab fa-facebook-messenger" style="color: white; margin-left: 20px; " target="_blank" href="https://m.me/andrew.petersen.23"></a>
+			<a class="fab fa-instagram" style="color: white; margin-left: 20px; " target="_blank" href="https://instagram.com/andyptsn"></a>
+			<a class="fas fa-envelope-square" style="color: white; margin-left: 20px; " target="_blank" href="#" onclick="window.open('https://tools.andrewpetersen.me/email', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=400'); return false;"></a>
+			  <div align="center" style="position: absolute; bottom: 20; left: 0; right: 0; ">
+			      <i class="fas fa-arrow-circle-down" style="font-size: 40; " id="fadeoutarrow"></i>
+			      <script>
+				function toggleFade() {
+					if ($(window).scrollTop() > 100){
+						if($('#fadeoutarrow').css('display') != 'none'){
+							$("#fadeoutarrow").fadeToggle(1500); 
+							console.log($(window).scrollTop()); 
+							console.log($("#fadeoutarrow").css("opacity")); 
+						}
+					} else {
 						$("#fadeoutarrow").fadeToggle(1500); 
-						console.log($(window).scrollTop()); 
-						console.log($("#fadeoutarrow").css("opacity")); 
 					}
-				} else {
-					$("#fadeoutarrow").fadeToggle(1500); 
+					setTimeout(function() {
+						toggleFade(); 
+					}, 2000); 
 				}
-				setTimeout(function() {
-					toggleFade(); 
-				}, 2000); 
-			}
-			$(document).ready(function(){
-			particlesJS.load('jumbo-inner', 'https://www.andrewpetersen.me/particle-config.json', function() {
-				console.log('Particle config loaded. ');
-			});
-			    toggleFade(); 
-			}); 
-		      </script>
+				$(document).ready(function(){
+				particlesJS.load('jumbo-inner', 'https://www.andrewpetersen.me/particle-config.json', function() {
+					console.log('Particle config loaded. ');
+				});
+				    toggleFade(); 
+				}); 
+			      </script>
+			</div>
+		      </p>
 		</div>
-	      </p>
 	</div>
     </div>
     <div class="container">
